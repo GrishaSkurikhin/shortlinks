@@ -1,0 +1,13 @@
+{{template "base" .}}
+ 
+{{define "main"}}
+<p><input type=text class="longurl" placeholder="Длинная ссылка"></p>
+<p><input type=text class="shortname" placeholder="Короткое имя"></p>
+<p><button class="button" onsubmit="return false;">Получить короткую ссылку</button></p>
+<p><input type=text class="shorturl" readonly></p>
+
+<hr width="400">
+
+<div class="text">Довольно часто при общении в интернете люди пересылают друг другу ссылки. Иногда эти ссылки бывают длинными. Чтобы решить эту проблему был создан этот сайт.</div>
+<div class="text">Чтобы уменьшить размер ссылки, впишите в поля саму ссылку и короткое имя новой сссылки, по которому ее можно будет потом определить.</div>
+{{end}}

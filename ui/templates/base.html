@@ -1,0 +1,22 @@
+{{define "base"}}
+<!doctype html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <title>URL Shortener</title>
+        <link rel='stylesheet' href='/static/css/main.css'>
+        <link rel='shortcut icon' href='/static/img/favicon.ico' type='image/x-icon'>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1 class="banner">URL Shortener</h1>
+        </header>
+        <main>
+            {{template "main" .}}
+        </main>
+        <script src="/static/js/main.js" type="text/javascript"></script>
+    </body>
+</html>
+{{end}}
